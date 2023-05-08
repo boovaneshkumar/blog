@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<style>
+    a
+    {
+       color: #ffffff;
+       font-family: 'Trebuchet MS';
+       text-decoration: none;
+    }
+    header{
+        text-align: center;
+    }
+    #head
+    {
+        border: 0px double #0ea774;
+    border-radius: 0px;
+    border-width: 1px;
+    display: block;
+    text-align: left;
+    float:initial;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:xx-large;
+    background-color: aliceblue;
+    margin-top: -8px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+    #link
+    {
+     word-spacing: 10px;
+     border: 4px;
+     border-width: 10px;
+     border-radius: 2px;
+     background-color: rgb(59, 7, 75);
+     text-align: center;
+     display: block;
+     float:inline-start;
+     font-size: larger;
+     font-style:inherit;
+     margin-bottom: 2px;
+    }
+    #imag
+    {
+    border:4px;
+    border-width: 1px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    filter: drop-shadow(30px 10px 8px rgb(51,5,70));
+    }
+    #blog
+    {
+    border: 1px double #000000;
+    border-width: 2px;
+    display: block;
+    float:initial;
+    font-style:normal;
+    font-variant:normal;
+    font-size: larger;
+    background-color: rgb(243, 17, 84);
+    margin-bottom: 1px;
+}
+blog:hover blog:active
+{
+  color: #0ea774;
+}
+    #survey
+    {
+    border: 1px double ;
+    border-width: 2px;
+     word-spacing: 2px;
+     line-height: 10px;
+     text-align: center;
+     background-color:#808080 ;
+     padding-bottom: 20px;
+     padding-top: 10px;
+     font-size:medium ;
+    }
+    #detail
+    {
+        border: 1px double ;
+    border-width: 2px;
+     word-spacing: 2px;
+     line-height: 10px;
+     text-align: center;
+     word-spacing: 10px;
+     background-color:#050505;
+     color: beige;
+     padding-bottom: 20px;
+     padding-top: 10px;
+     font-size:medium ;
+     font-style: inherit;
+     font-display:unset;
+    }
+</style>
+<body>
+    <form action="#" method="post" enctype="text/plain"  oninput="getin()">
+    <span class="head" id="head">
+        <header>blog</header>
+    
+    </span>
+     <span class="link" id="link">   
+        <a href="#imag">Image</a>
+        <a href="#blog">Blog</a>
+        <a href="#survey">Contact-Us</a>
+        <a href="#detail">User-Information </a>
+     </span>
+     <div class="imag" id="imag">
+        <a href="Vizhiyile.mp3">
+        <img src="just.jpg" width="1335" height="350">
+        </a>
+     </div>
+     <div class="blog" id="blog">
+            <a href="video.mp4.mp4">
+        There are several things that I like to do in my free time .
+         As a student , I don’t have alot of free time , but I always try to make free time for me to do whatever I like. 
+         I extremely like taking picture for nature when I have any free time. Also I like playing video games , cleaning my apartment , watching movies , chatting with my friends and listening to music .
+         When I feel tired , I like to spend my free time in sleeping . unfortunately , I don’t like readings books at all , I just like reading some novels and that dependent to my mood.
+         Forether , I don’t like spending my free time outside my home in school’s days . I like spending my time outside in holidays only. 
+         I think the most of  what I like to do in my free time are dependent to my mood.Taking a day to just focus on yourself and your family is a great way to free up some time, 
+         and doing some small, productive things with that time can help you grow closer as a family and help everyone in the family enter tomorrow with a renewed sense of energy.
+        </a>
+        </div>
+     <div class="survey" id="survey">
+        <h1>Contact Us</h1>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" required >
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname"><p></p>
+        <label for="phone">Mobile number</label> 
+        <input type="tel" id="phone" name="phone" required>
+    <label for="mail">E-mail</label>
+    <input type="email" id="mail" name="mail" size="25">
+    <p>SUGGESTION</p><label for="suggestion"></label>
+  <textarea id="you" id="yourself" name="yourself" rows="4" cols="70">
+  </textarea>
+     </div>  
+     <footer>
+     <div class="detail" id="detail">
+        <h1>User Information</h1>
+        <label for="fname">First name</label>
+        <input type="text" id="fnam" name="fnam" readonly >
+        <label for="lname">Last name</label>
+        <input type="text" id="lnam" name="lnam" readonly><p></p>
+        <label for="phone">Mobile number</label> 
+        <input type="tel" id="phon" name="phon" readonly>
+    <label for="mail">E-mail</label>
+    <input type="email" id="maill" name="maill" size="25" readonly>
+     </div>
+     </footer>
+    </form>
+</body>
+     <script>
+    
+    function getin() 
+        {  
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("phone").value;
+            var d = document.getElementById("mail").value;
+            document.getElementById('fnam').value= a;
+            document.getElementById('lnam').value= b;
+            document.getElementById('phon').value= c;
+            document.getElementById('maill').value= d;
+
+
+
+        }
+     </script>
+</html>
